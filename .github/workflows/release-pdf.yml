@@ -2,9 +2,11 @@ name: Release PDF
 
 on:
   push:
-    branches: [main]
-    paths: ["docs/README.md"]
-  workflow_dispatch:
+    branches:
+      - main
+    paths:
+      - 'docs/README.md'
+  workflow_dispatch
 
 jobs:
   release:
