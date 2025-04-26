@@ -1,3 +1,42 @@
-remote_theme: pages-themes/cayman@v0.2.0
-title: 山本剛成の職務経歴書
-description: 山本剛成の職務経歴書
+remote_theme: sproogen/modern-resume-theme@v2.0.10
+
+lang: ja
+url: "https://takenari-yamamoto.github.io"
+baseurl: ""
+
+title: "山本剛成｜ソフトウェアエンジニア"
+description: "山本剛成の職務経歴書"
+
+name: "山本 剛成"
+email: "tktkymnr1216@gmail.com"
+avatar: "asserts/image.png"
+
+darkmode: true
+
+social_links:
+  github: "Takenari-Yamamoto"
+  linkedin: "takenari-yamamoto"
+
+content:
+  - title: 職務経歴
+    layout: list
+    content:
+      - layout: left
+        title: "株式会社Foo"
+        sub_title: "バックエンドエンジニア"
+        caption: "2022-04 〜 2025-03"
+        description: |
+          - Go / TypeScript で REST / gRPC API を設計・実装
+          - Kubernetes (GKE) ＋ ArgoCD でマイクロサービス運用
+          - Spanner, Cloud SQL を併用した大規模 DB 設計
+
+  - title: スキルセット
+    layout: text
+    content: |
+      - **言語**: Go, TypeScript, Kotlin
+      - **インフラ**: Kubernetes, Terraform, GCP
+      - **その他**: gRPC, GraphQL, Clean Architecture
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
