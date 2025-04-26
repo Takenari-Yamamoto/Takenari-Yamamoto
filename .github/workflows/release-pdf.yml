@@ -1,8 +1,13 @@
-# .github/workflows/md-to-pdf-puppeteer.yml
-name: build-readme-pdf-with-md-to-pdf
+# .github/workflows/md-to-pdf-pandoc.yml
+name: build-readme-pdf
 
 on:
-  workflow_dispatch: # 手動トリガだけ。push 連動なら書き換えて
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/README.md"
+  workflow_dispatch:
 
 jobs:
   pdf:
@@ -10,19 +15,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Convert Markdown to PDF
+        uses: docker://pandoc/latex:3.1
         with:
-          node-version: "20"
-
-      - name: Install md-to-pdf
-        run: npm install -g md-to-pdf@6 # バージョン固定を推奨
-
-      - name: Generate PDF (no sandbox)
-        run: |
-          md-to-pdf docs/README.md \
-            --launch-options '{"args":["--no-sandbox","--disable-setuid-sandbox"]}'
+          args: >
+            docs/README.md
+            -o docs/README.pdf
+            --from=gfm
+            --pdf-engine=xelatex
+            --template=eisvogel            # 好みで変更
+            --metadata=title:"Project Docs"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
