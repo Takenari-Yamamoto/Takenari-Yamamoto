@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'docs/README.md'
-  workflow_dispatch
+      - "docs/README.md"
+  workflow_dispatch:
 
 jobs:
   release:
