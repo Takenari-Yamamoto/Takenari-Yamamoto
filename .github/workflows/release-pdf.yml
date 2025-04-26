@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths: "docs/README.md"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: "docs/README.md"
 
 jobs:
   release:
