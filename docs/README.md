@@ -2,66 +2,17 @@
 
 ## 基本情報
 
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-  tr:hover {
-    background-color: #f5f5f5;
-  }
-</style>
-
-<table>
-  <tr>
-    <th>項目</th>
-    <th>詳細</th>
-  </tr>
-  <tr>
-    <td><strong>名前</strong></td>
-    <td>山本 剛成</td>
-  </tr>
-  <tr>
-    <td><strong>メール</strong></td>
-    <td><a href="mailto:tktkymnr1216@gmail.com">tktkymnr1216@gmail.com</a></td>
-  </tr>
-  <tr>
-    <td><strong>職種</strong></td>
-    <td>フリーランスエンジニア</td>
-  </tr>
-  <tr>
-    <td><strong>居住地</strong></td>
-    <td>東京都</td>
-  </tr>
-  <tr>
-    <td><strong>英語力</strong></td>
-    <td>TOEIC 870 点</td>
-  </tr>
-  <tr>
-    <td><strong>資格</strong></td>
-    <td>象使い</td>
-  </tr>
-  <tr>
-    <td><strong>Github</strong></td>
-    <td><a href="https://github.com/Takenari-Yamamoto">https://github.com/Takenari-Yamamoto</a></td>
-  </tr>
-  <tr>
-    <td><strong>Qiita</strong></td>
-    <td><a href="https://qiita.com/takengineer1216">https://qiita.com/takengineer1216</a></td>
-  </tr>
-  <tr>
-    <td><strong>Note</strong></td>
-    <td><a href="https://note.com/tknr_1216">https://note.com/tknr_1216</a></td>
-  </tr>
-</table>
+| 項目       | 詳細                                                                         |
+| ---------- | ---------------------------------------------------------------------------- |
+| **名前**   | 山本 剛成                                                                    |
+| **メール** | [tktkymnr1216@gmail.com](mailto:tktkymnr1216@gmail.com)                      |
+| **職種**   | フリーランスエンジニア                                                       |
+| **居住地** | 東京都                                                                       |
+| **英語力** | TOEIC 870 点                                                                 |
+| **資格**   | 象使い                                                                       |
+| **Github** | [https://github.com/Takenari-Yamamoto](https://github.com/Takenari-Yamamoto) |
+| **Qiita**  | [https://qiita.com/takengineer1216](https://qiita.com/takengineer1216)       |
+| **Note**   | [https://note.com/tknr_1216](https://note.com/tknr_1216)                     |
 
 ## 概要
 
