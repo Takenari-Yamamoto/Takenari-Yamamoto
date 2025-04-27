@@ -1,5 +1,5 @@
-remote_theme: sproogen/modern-resume-theme@v2.0.10
+remote_theme: cotes2020/chirpy@4.3.0
 title: 山本剛成の職務経歴書
-description: フリーランスSWE / Go・TypeScript・K8s
+description: 山本剛成の職務経歴書
 lang: ja
 darkmode: true
